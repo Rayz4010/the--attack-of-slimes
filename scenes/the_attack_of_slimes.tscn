@@ -15,7 +15,7 @@ y_sort_enabled = true
 script = ExtResource("1_fr5wg")
 
 [node name="Player" parent="." instance=ExtResource("1_mn5r3")]
-position = Vector2(541, 290)
+position = Vector2(565, 287)
 
 [node name="Path2D" type="Path2D" parent="Player"]
 position = Vector2(-580.163, 231.12)
