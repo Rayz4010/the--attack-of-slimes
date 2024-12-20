@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5id3u3y31jyn"]
+
+[ext_resource type="PackedScene" uid="uid://1jalatjypwya" path="res://scenes/player.tscn" id="1_mn5r3"]
+[ext_resource type="PackedScene" uid="uid://3k8pouhfhej3" path="res://scenes/tree.tscn" id="2_q5bi2"]
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_mn5r3")]
+position = Vector2(541, 290)
+
+[node name="Tree" parent="." instance=ExtResource("2_q5bi2")]
+position = Vector2(159, 215)
+
+[node name="Tree2" parent="." instance=ExtResource("2_q5bi2")]
+position = Vector2(282, 460)
+
+[node name="Tree3" parent="." instance=ExtResource("2_q5bi2")]
+position = Vector2(776, 155)
+
+[node name="Tree4" parent="." instance=ExtResource("2_q5bi2")]
+position = Vector2(824, 484)
+
+[node name="Tree5" parent="." instance=ExtResource("2_q5bi2")]
+position = Vector2(1091, 312)
+
+[node name="Tree6" parent="." instance=ExtResource("2_q5bi2")]
+position = Vector2(47, 622)
+
+[node name="Tree7" parent="." instance=ExtResource("2_q5bi2")]
+position = Vector2(844, 179)
+
+[node name="Tree8" parent="." instance=ExtResource("2_q5bi2")]
+position = Vector2(799, 267)
+
+[node name="Tree9" parent="." instance=ExtResource("2_q5bi2")]
+position = Vector2(992, 538)
+
+[node name="Tree10" parent="." instance=ExtResource("2_q5bi2")]
+position = Vector2(97, 291)
+
+[node name="Tree11" parent="." instance=ExtResource("2_q5bi2")]
+position = Vector2(50, 107)
