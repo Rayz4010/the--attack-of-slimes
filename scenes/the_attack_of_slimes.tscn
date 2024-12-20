@@ -25,7 +25,7 @@ curve = SubResource("Curve2D_e7tap")
 [node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D"]
 unique_name_in_owner = true
 position = Vector2(-298, -469.734)
-rotation = 0.00963323
+rotation = 0.00963354
 
 [node name="Tree" parent="." instance=ExtResource("2_q5bi2")]
 position = Vector2(159, 215)
