@@ -1,17 +1,31 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5id3u3y31jyn"]
+[gd_scene load_steps=5 format=3 uid="uid://b5id3u3y31jyn"]
 
+[ext_resource type="Script" path="res://scripts/the_attack_of_slimes.gd" id="1_fr5wg"]
 [ext_resource type="PackedScene" uid="uid://1jalatjypwya" path="res://scenes/player.tscn" id="1_mn5r3"]
 [ext_resource type="PackedScene" uid="uid://3k8pouhfhej3" path="res://scenes/tree.tscn" id="2_q5bi2"]
-[ext_resource type="PackedScene" uid="uid://bx6j1ya1ithr5" path="res://scenes/enemy.tscn" id="3_kxkpd"]
+
+[sub_resource type="Curve2D" id="Curve2D_e7tap"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -298, -469.734, 0, 0, 0, 0, 920, -458, 0, 0, 0, 0, 926, 291)
+}
+point_count = 3
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
+script = ExtResource("1_fr5wg")
 
 [node name="Player" parent="." instance=ExtResource("1_mn5r3")]
 position = Vector2(541, 290)
 
-[node name="Enemy" parent="." instance=ExtResource("3_kxkpd")]
-position = Vector2(220, 354)
+[node name="Path2D" type="Path2D" parent="Player"]
+position = Vector2(-580.163, 231.12)
+scale = Vector2(1.89542, 2.44632)
+curve = SubResource("Curve2D_e7tap")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-298, -469.734)
+rotation = 0.00963323
 
 [node name="Tree" parent="." instance=ExtResource("2_q5bi2")]
 position = Vector2(159, 215)
@@ -45,3 +59,8 @@ position = Vector2(97, 291)
 
 [node name="Tree11" parent="." instance=ExtResource("2_q5bi2")]
 position = Vector2(50, 107)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

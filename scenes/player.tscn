@@ -1,8 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://1jalatjypwya"]
+[gd_scene load_steps=7 format=3 uid="uid://1jalatjypwya"]
 
 [ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_a5jjh"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_gu2my"]
 [ext_resource type="PackedScene" uid="uid://d0c6x8glu440s" path="res://scenes/gun.tscn" id="2_ji38d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eaxuw"]
+radius = 52.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d7gce"]
+bg_color = Color(0.178212, 0.178212, 0.178212, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sxvv8"]
+bg_color = Color(0, 0.673266, 0.320393, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_gu2my")
@@ -17,3 +34,24 @@ position = Vector2(2, 18)
 polygon = PackedVector2Array(-28, -6, -33, -8, -37, -12, -40, -17, 40, -18, 37, -12, 30, -7, 23, -6, 25, 4, 28, 4, 32, 6, 34, 10, 34, 15, 33, 18, 29, 23, 15, 23, 9, 20, 7, 16, 2, -7, -5, 7, -1, 13, -1, 20, -6, 24, -9, 26, -22, 24, -27, 22, -29, 17, -28, 11, -21, -6)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="HurtBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(2, -5)
+shape = SubResource("CircleShape2D_eaxuw")
+debug_color = Color(0.372096, 0.0123588, 0.172379, 0.42)
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -39.0
+offset_top = -90.0
+offset_right = 38.0
+offset_bottom = -84.0
+theme_override_styles/background = SubResource("StyleBoxFlat_d7gce")
+theme_override_styles/fill = SubResource("StyleBoxFlat_sxvv8")
+value = 100.0
+show_percentage = false
