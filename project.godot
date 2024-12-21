@@ -13,6 +13,8 @@ config_version=5
 config/name="the attck of the slime"
 run/main_scene="res://scenes/the_attack_of_slimes.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/image="res://icon.png"
+config/icon="res://icon.png"
 
 [display]
 
@@ -53,4 +55,6 @@ shift={
 
 [rendering]
 
+textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true
 viewport/transparent_background=true
