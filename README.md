@@ -1,4 +1,4 @@
-```markdown
+
 # The Attack of Slimes
 
 [![Build - GitHub Actions](https://github.com/Rayz4010/the--attack-of-slimes/actions/workflows/ci.yml/badge.svg)](https://github.com/Rayz4010/the--attack-of-slimes/actions)
@@ -166,5 +166,3 @@ Next steps I can take for you:
 - Detect the engine (Unity/Godot/Phaser/Pygame) from the repo and fill in exact install/run commands and CI workflow examples.
 - Add specific badges (coverage, CodeQL, test, Discord) — tell me which services you use.
 
-Which would you like me to do next?
-```
