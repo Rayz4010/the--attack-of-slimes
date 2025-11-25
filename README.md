@@ -8,7 +8,7 @@
 [![Top language](https://img.shields.io/github/languages/top/Rayz4010/the--attack-of-slimes)](https://github.com/Rayz4010/the--attack-of-slimes)
 [![Open issues](https://img.shields.io/github/issues/Rayz4010/the--attack-of-slimes)](https://github.com/Rayz4010/the--attack-of-slimes/issues)
 [![Downloads](https://img.shields.io/github/downloads/Rayz4010/the--attack-of-slimes/total)](https://github.com/Rayz4010/the--attack-of-slimes/releases)
-[![Stars](https://img.shields.io/github/stars/Rayz4010/the--attack-of-slimes?style=social)](https://github.com/Rayz4010/the--attack-of-slimes/stargazers)
+
 
 One-line description
 A small action/arcade/adventure prototype where waves of slimes attack and the player must survive, upgrade, and defeat increasingly difficult slime bosses.
