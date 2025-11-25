@@ -59,7 +59,9 @@ Add screenshots or GIFs of your game here:
 - assets/screenshots/ or .github/images/
 
 Example:
-![Gameplay screenshot](.github/images/screenshot.png)
+<img src="https://github.com/Rayz4010/the--attack-of-slimes/blob/main/Screenshot/Screenshot%202025-11-25%20at%2019.25.45.png">
+<img src="">
+<img src="">
 
 ## Getting started
 
