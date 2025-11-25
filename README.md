@@ -1,7 +1,7 @@
 
 # The Attack of Slimes
 
-[![Build - GitHub Actions](https://github.com/Rayz4010/the--attack-of-slimes/actions/workflows/ci.yml/badge.svg)](https://github.com/Rayz4010/the--attack-of-slimes/actions)
+
 [![Latest release](https://img.shields.io/github/v/release/Rayz4010/the--attack-of-slimes?label=release)](https://github.com/Rayz4010/the--attack-of-slimes/releases)
 [![License](https://img.shields.io/github/license/Rayz4010/the--attack-of-slimes)](https://github.com/Rayz4010/the--attack-of-slimes/blob/main/LICENSE)
 [![Repository size](https://img.shields.io/github/repo-size/Rayz4010/the--attack-of-slimes)](https://github.com/Rayz4010/the--attack-of-slimes)
@@ -67,7 +67,6 @@ Example:
 Update this list to match your project's actual tech stack. Examples:
 - Unity 2020.3+ (or your project's Unity version)
 - Godot 3.5+ / Godot 4.0+
-- Node.js 14+ and npm or yarn (for web/HTML5 builds)
 - Python 3.8+ (for Pygame)
 - A code editor (VS Code, Rider, etc.)
 
@@ -79,25 +78,13 @@ Unity (example)
 2. Open the scene at Assets/Scenes/Main.unity.
 3. Press Play in the editor.
 
-Godot (example)
+Godot
 1. Open project.godot in the Godot editor.
 2. Run the main scene.
-
-Web (Phaser/HTML5) (example)
-1. npm install
-2. npm run start
-3. Open http://localhost:8080
-
-Pygame (example)
-1. python -m venv venv
-2. source venv/bin/activate (or venv\Scripts\activate on Windows)
-3. pip install -r requirements.txt
-4. python run_game.py
 
 If you're not sure which applies, check the repository top-level files:
 - Unity: Assets/, ProjectSettings/, .unityproj
 - Godot: project.godot, .import
-- Web: package.json, webpack.config.js
 - Python: requirements.txt, setup.py, main.py
 
 ## Gameplay / Controls
